@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, TRANSLATIONS, TRANSLATIONS_FORMAT, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
+import {  CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./components/header/header.component";
 
+
+import { SettingsService } from "./services/settings.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +21,13 @@ import { HeaderComponent } from "./components/header/header.component";
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SettingsService,
+    {
+      provide: LOCALE_ID,
+      deps: [SettingsService],
+      useFactory: (settingsService) => settingsService.initLanguage()
+    }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

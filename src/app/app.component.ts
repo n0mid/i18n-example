@@ -5,6 +5,9 @@ import { HttpClient } from '@angular/common/http'
   templateUrl: './app.component.html'
 })
 export class AppComponent {
+  
+  public date: Date = new Date();
+  
   public books: any[] = [];
 
   public query: string = '';

@@ -1,12 +1,23 @@
 <app-header></app-header>
 <div>
-  <h1>Book Search</h1>
+  <h1 i18n="header">Book Search</h1>
+
+
+
+  <p>{{date | date }}</p>
+  <p>{{ 1234567890.232 | number }}</p>
+
+
   <div class="row">
     <div class="input-field col s12">
-      <input placeholder="Type to search..." type="text" [(ngModel)]="query">
+      <input i18n-placeholder="input placeholder"
+             [(ngModel)]="query"
+             placeholder="Type to search..."
+             type="text"
+            >
     </div>
     <div class="col s12">
-      <button class="btn right" (click)="search()">Search</button>
+      <button class="btn right" (click)="search()" i18n>Search</button>
     </div>
   </div>
 </div>
@@ -14,10 +25,10 @@
   <table>
     <thead>
     <tr>
-      <th>Preview</th>
-      <th>Title</th>
-      <th>Authors</th>
-      <th>PageCount</th>
+      <th i18n="@@previewId">Preview</th>
+      <th i18n="@@titleId">Title</th>
+      <th i18n="@@authorsId">Authors</th>
+      <th i18n="@@pageCountId">PageCount</th>
     </tr>
     </thead>
     <tbody>
