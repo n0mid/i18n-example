@@ -1,0 +1,11 @@
+{
+  "header": "Book search",
+  "placeholder": "Type to search...",
+  "button": "Search",
+  "table": {
+    "preview": "Preview",
+    "title": "Title",
+    "authors": "Authors",
+    "pageCount": "Page count"
+  }
+}

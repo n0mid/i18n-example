@@ -1,13 +1,13 @@
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="javascript:void(0)">EN</a></li>
-  <li><a href="javascript:void(0)">RU</a></li>
+  <li><a href="javascript:void(0)" (click)="change('en')">EN</a></li>
+  <li><a href="javascript:void(0)" (click)="change('ru')">RU</a></li>
 </ul>
 <nav>
   <div class="nav-wrapper">
     <ul class="right hide-on-med-and-down">
       <li>
         <a class="dropdown-button" href="javascript:void(0)" data-activates="dropdown1">
-          Select language
+          {{ lang }}
           <i class="material-icons right">arrow_drop_down</i>
         </a>
       </li>

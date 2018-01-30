@@ -1,12 +1,12 @@
 <app-header></app-header>
 <div>
-  <h1>Book Search</h1>
+  <h1>{{'header' | translate}}</h1>
   <div class="row">
     <div class="input-field col s12">
-      <input placeholder="Type to search..." type="text" [(ngModel)]="query">
+      <input placeholder="{{'placeholder' | translate}}" type="text" [(ngModel)]="query">
     </div>
     <div class="col s12">
-      <button class="btn right" (click)="search()">Search</button>
+      <button class="btn right" (click)="search()">{{'button' | translate}}</button>
     </div>
   </div>
 </div>
@@ -14,10 +14,10 @@
   <table>
     <thead>
     <tr>
-      <th>Preview</th>
-      <th>Title</th>
-      <th>Authors</th>
-      <th>PageCount</th>
+      <th>{{'table.preview' | translate}}</th>
+      <th>{{'table.title' | translate}}</th>
+      <th>{{'table.authors' | translate}}</th>
+      <th>{{'table.pageCount' | translate}}</th>
     </tr>
     </thead>
     <tbody>
