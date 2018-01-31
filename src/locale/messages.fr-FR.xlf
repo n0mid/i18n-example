@@ -2,7 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="1e8bbdd005b074e3c6c4c11f99251b32106c0a88" datatype="html">
+      <trans-unit id="bc10abc5d8051cb10223cd327fd4530d8527b48d" datatype="html">
         <source>Book Search</source>
          <target>Recherche de livre</target>
         <context-group purpose="location">
@@ -10,6 +10,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">header</note>
+         <note priority="1" from="meaning">book search</note>
       </trans-unit>
       <trans-unit id="554125c0066b9c0b62ea7905d42655e3e54b31fa" datatype="html">
         <source>Type to search...</source>
